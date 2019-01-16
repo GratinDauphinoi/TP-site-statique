@@ -6,7 +6,6 @@ print (markdown)
 
 fichier_html = open("html.txt", "w")
 
-
 Remplacement_h1 = markdown.replace("#", "<h1>")
 fichier_html.write(Remplacement_h1)
 
