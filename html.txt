@@ -1,3 +1,36 @@
+<h1> titre = <h1>
+
+<h1><h1> sous-titre = <h2>
+
+<h1><h1><h1> sous-sous-titre = <h3>
+
+listes non ordonées = <ul> et <li>
+
+URL (http://quelquechose.com) = <a href="http://quelquechose.com">http://quelquechose.com</a>
+
+*un texte important* = <em>un texte important</em>
+# titre = <h1>
+
+<h2> sous-titre = <h2>
+
+<h2># sous-sous-titre = <h3>
+
+listes non ordonées = <ul> et <li>
+
+URL (http://quelquechose.com) = <a href="http://quelquechose.com">http://quelquechose.com</a>
+
+*un texte important* = <em>un texte important</em>
+# titre = <h1>
+
+<h3> sous-titre = <h2>
+
+<h3># sous-sous-titre = <h3>
+
+listes non ordonées = <ul> et <li>
+
+URL (http://quelquechose.com) = <a href="http://quelquechose.com">http://quelquechose.com</a>
+
+*un texte important* = <em>un texte important</em>
 # titre = <h1>
 
 ## sous-titre = <h2>
@@ -8,4 +41,4 @@ listes non ordonées = <ul> et <li>
 
 URL (http://quelquechose.com) = <a href="http://quelquechose.com">http://quelquechose.com</a>
 
-*un texte important* = <em>un texte important</em>
+<em>un texte important<em> = <em>un texte important</em>
