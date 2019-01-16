@@ -1,10 +1,22 @@
-
-
 fichier_markdown = open("markdown.md", "r")
 markdown = fichier_markdown.read()
-print (markdown)
+#print (markdown)
 
 fichier_html = open("html.html", "w")
+
+'''
+liste = {"#" : "<h1>", "##" : "<h2>", "###" : "<h3>", "*" : "<em>"}
+
+cle = liste.keys()
+print(cle)
+
+valeurs = liste.values()
+print(valeurs)
+
+
+Remplacement = markdown.replace(str(cle),str(valeurs))
+fichier_html.write(Remplacement)
+'''
 
 if "#" in markdown:
     Remplacement_h1 = markdown.replace("#", "<h1>")
@@ -21,6 +33,7 @@ if "###" in markdown:
 if "*" in markdown:
     Remplacement_important = markdown.replace("*", "<em>")
     fichier_html.write(Remplacement_important)
+
 
 fichier_markdown.close()
 fichier_html.close()
