@@ -17,22 +17,13 @@ print(valeurs)
 Remplacement = markdown.replace(str(cle),str(valeurs))
 fichier_html.write(Remplacement)
 '''
+Remplacement = markdown.replace("###", "<h3>").replace("##", "<h2>").replace("#", "<h1>")
 
-if "#" in markdown:
-    Remplacement_h1 = markdown.replace("#", "<h1>")
-    fichier_html.write(Remplacement_h1)
 
-if "##" in markdown:
-    Remplacement_h2 = markdown.replace("##", "<h2>")
-    fichier_html.write(Remplacement_h2)
+markdown.replace("*", "<em>")
 
-if "###" in markdown:
-    Remplacement_h3 = markdown.replace("###", "<h3>")
-    fichier_html.write(Remplacement_h3)
+fichier_html.write(Remplacement)
 
-if "*" in markdown:
-    Remplacement_important = markdown.replace("*", "<em>")
-    fichier_html.write(Remplacement_important)
 
 
 fichier_markdown.close()
