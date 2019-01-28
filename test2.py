@@ -18,21 +18,21 @@ fichier_html = open("html.html", "w")
 # Remplacement = markdown.replace(str(cle),str(valeurs))
 # fichier_html.write(Remplacement)
 
-#oui = re.sub(r'*', r'<em>\1</em>', markdown)
-#fichier_html.write(oui)
+method = 'sghsduighsduighU.Ssdgiurehtdiugeuirghe'
+fichier_html.write(re.sub(r'U.S', r'Coucou', method))
 
 
 
 
 
-a = markdown.replace("###", "<h3>").replace("##", "<h2>").replace("#", "<h1>")
+# a = markdown.replace("###", "<h3>").replace("##", "<h2>").replace("#", "<h1>")
 
-a = a.replace("*", "<em>")
+# a = a.replace("*", "<em>")
 
 
-print(a)
+# print(a)
 
-fichier_html.write(a)
+# fichier_html.write(a)
 
 
 
