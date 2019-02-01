@@ -14,16 +14,11 @@ fichier_html = open("html.html", "w")
 # valeurs = liste.values()
 # print(valeurs)
 
-
 # Remplacement = markdown.replace(str(cle),str(valeurs))
 # fichier_html.write(Remplacement)
 
 method = 'sghsduighsduighU.Ssdgiurehtdiugeuirghe'
 fichier_html.write(re.sub(r'U.S', r'Coucou', method))
-
-
-
-
 
 # a = markdown.replace("###", "<h3>").replace("##", "<h2>").replace("#", "<h1>")
 
@@ -33,13 +28,6 @@ fichier_html.write(re.sub(r'U.S', r'Coucou', method))
 # print(a)
 
 # fichier_html.write(a)
-
-
-
-
-
-
-
 
 fichier_markdown.close()
 fichier_html.close()

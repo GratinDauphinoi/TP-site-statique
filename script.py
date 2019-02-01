@@ -1,5 +1,4 @@
 
-
 fichier_markdown = open("markdown.md", "r")
 markdown = fichier_markdown.read()
 print (markdown)
