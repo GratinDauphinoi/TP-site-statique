@@ -7,6 +7,7 @@ parser.add_argument("-t", help="le dossier contenant des modèles de pages web �
 args = parser.parse_args()
 
 if args.i:
+    print(args.i)
     print("Fichier source contenant le markdown : https://github.com/GratinDauphinoi/TP-site-statique/blob/master/markdown.txt")
 if args.o:
     print("Fichier généré pour le site statique : https://github.com/GratinDauphinoi/TP-site-statique/blob/master/html.txt")
