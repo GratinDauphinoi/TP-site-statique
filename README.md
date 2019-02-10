@@ -17,3 +17,5 @@ C'est le fichier qui contient le code HTML converti du markdown et qui sera le r
 ##### l'énoncé se trouve au lien suivant 
 
 `https://github.com/vpoulailleau/site_statique`
+
+### Fonctionnement
