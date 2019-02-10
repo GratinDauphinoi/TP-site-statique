@@ -13,3 +13,7 @@ C'est dans ce fichier que le texte Markdown devra être écrit avant d'être con
 ##### le fichier html
 
 C'est le fichier qui contient le code HTML converti du markdown et qui sera le rendu final de ce projet
+
+##### l'énoncé se trouve au lien suivant 
+
+`https://github.com/vpoulailleau/site_statique`
