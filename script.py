@@ -4,6 +4,10 @@ import argparse
 import black
 
 
+debut = "<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset='utf-8'/>\n\t<link rel='stylesheet' type='text/css' href='main.css'/>\n<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>\n<style>body {font-family: 'Open Sans', sans-serif;}</style></head>\n<body>\n"
+fin = "</body>\n</html>"
+
+
 def convertion(input_directory, output_directory):
 
     # conversion MD -> HTML
@@ -14,10 +18,12 @@ def convertion(input_directory, output_directory):
     output_directory = codecs.open(
         output_directory, "w", encoding="utf-8", errors="xmlcharrefreplace"
     )
+    output_directory.write(debut)
     output_directory.write(html)
+    output_directory.write(fin)
 
 
-def artung(input_directory, output_directory):
+def achtung(input_directory, output_directory):
 
     input_directory = codecs.open("markdown.md", mode="r", encoding="utf-8")
     text = input_directory.read()
@@ -47,7 +53,9 @@ def artung(input_directory, output_directory):
     output_directory = codecs.open(
         output_directory, "w", encoding="utf-8", errors="xmlcharrefreplace"
     )
+    output_directory.write(debut)
     output_directory.write(html)
+    output_directory.write(fin)
 
 
 # Utilisation arguments
@@ -64,15 +72,13 @@ parser.add_argument(
     type=str,
     help="le chemin du dossier où seront mis les fichiers générés pour le site statique",
 )
-parser.add_argument(
-    "-t",
-    help="le dossier contenant des modèles de pages web à compléter"
-)
-parser.add_argument("-a", "--artung", type=str, help="Texte en allemand")
+
+parser.add_argument("-a", "--achtung", type=str, help="Texte en allemand")
+
 args = parser.parse_args()
 
 
-if args.artung is True:
-    artung(args.input_directory, args.output_directory)
+if args.achtung is True:
+    achtung(args.input_directory, args.output_directory)
 else:
     convertion(args.input_directory, args.output_directory)
