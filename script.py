@@ -27,11 +27,9 @@ def achtung(input_directory, output_directory):
 
     input_directory = codecs.open("markdown.md", mode="r", encoding="utf-8")
     text = input_directory.read()
-    html = markdown.markdown(text)
 
     # Code bonus allemand
-
-    Remplacement_important = (
+    html = markdown.markdown(
         text.replace("h", "")
         .replace("ss", "z")
         .replace("s", "z")
@@ -47,8 +45,6 @@ def achtung(input_directory, output_directory):
         .replace("v", "f")
         .replace("s", "")
     )
-
-    html.write(Remplacement_important)
 
     output_directory = codecs.open(
         output_directory, "w", encoding="utf-8", errors="xmlcharrefreplace"
@@ -73,7 +69,7 @@ parser.add_argument(
     help="le chemin du dossier où seront mis les fichiers générés pour le site statique",
 )
 
-parser.add_argument("-a", "--achtung", type=str, help="Texte en allemand")
+parser.add_argument("-a", "--achtung", help="Texte en allemand", action="store_true")
 
 args = parser.parse_args()
 
