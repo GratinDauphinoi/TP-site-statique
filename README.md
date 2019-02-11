@@ -19,3 +19,12 @@ C'est le fichier qui contient le code HTML converti du markdown et qui sera le r
 `https://github.com/vpoulailleau/site_statique`
 
 ### Fonctionnement
+
+Le script se lance tout d'abord en entrant le nom du fichier ( ici `script.py`), suivis de `-i` "nom du fichier md ou est inscrit le code marckdown" et enfin `-o` "nom du fichier html si il existe ou le programme le créera, qui acceuillera le rendu md sous forme HTML".
+
+#### Bonus 
+
+Pour finir une option est rajoutée qui permet d'utiliser l'achtung: pour aider les allemands à lire nos blogs français.
+Pour plus de reseignement, cliquez ici : `https://linuxfr.org/nodes/108129/comments/1642666`
+
+Cette option se traduit par un `-a` écrit en fin de ligne de commande.
