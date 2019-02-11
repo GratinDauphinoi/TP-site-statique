@@ -4,7 +4,7 @@
 
 ##### le fichier script
 
-c'est dans ce fichier qu'est contenu le code python permettant la conversion du Markdown en HTML
+C'est dans ce fichier qu'est contenu le code python permettant la conversion du Markdown en HTML
 
 ##### le fichier markdown
 
@@ -12,7 +12,7 @@ C'est dans ce fichier que le texte Markdown devra être écrit avant d'être con
 
 ##### le fichier html
 
-C'est le fichier qui contient le code HTML converti du markdown et qui sera le rendu final de ce projet
+C'est le fichier qui contient le code HTML converti du markdown.
 
 ##### l'énoncé se trouve au lien suivant 
 
@@ -28,3 +28,10 @@ Pour finir une option est rajoutée qui permet d'utiliser l'achtung: pour aider 
 Pour plus de reseignement, cliquez ici : `https://linuxfr.org/nodes/108129/comments/1642666`
 
 Cette option se traduit par un `-a` écrit en fin de ligne de commande.
+
+#### Exemple 
+
+On peut utiliser ce programme par exemple de la maniere suivante : 
+`py .\script.py -i D:\Ynov\Python\TP-site-statique\markdown.md -o D:\Ynov\Python\TP-site-statique\html.html -a`
+
+Pour plus d'information utilisez la commande `-h` ou `--help`.

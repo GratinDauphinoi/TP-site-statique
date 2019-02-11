@@ -66,10 +66,15 @@ parser.add_argument(
     "-o",
     "--output_directory",
     type=str,
-    help="le chemin du dossier où seront mis les fichiers générés pour le site statique",
+    help="le chemin du dossier où seront mis les fichiers générés pour le site statique.",
 )
 
-parser.add_argument("-a", "--achtung", help="Texte en allemand", action="store_true")
+parser.add_argument(
+    "-a",
+    "--achtung",
+    help="Aider les allemands à lire nos blogs français.",
+    action="store_true",
+)
 
 args = parser.parse_args()
 
